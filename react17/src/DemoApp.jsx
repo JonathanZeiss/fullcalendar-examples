@@ -1,12 +1,22 @@
-import React from 'react'
-import { formatDate } from '@fullcalendar/core'
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
-import timeGridPlugin from '@fullcalendar/timegrid'
-import interactionPlugin from '@fullcalendar/interaction'
-import { INITIAL_EVENTS, createEventId } from './event-utils'
+// import React from 'react'
+// import { formatDate } from '@fullcalendar/core'
+// import FullCalendar from '@fullcalendar/react'
+// import dayGridPlugin from '@fullcalendar/daygrid'
+// import timeGridPlugin from '@fullcalendar/timegrid'
+// import interactionPlugin from '@fullcalendar/interaction'
+// import { INITIAL_EVENTS, createEventId } from './event-utils'
 
-export default class DemoApp extends React.Component {
+const React = require('react');
+const formatDate = require("@fullcalendar/core").formatDate;
+const FullCalendar = require("@fullcalendar/react");
+const dayGridPlugin = require("@fullcalendar/daygrid");
+const timeGridPlugin = require("@fullcalendar/timegrid");
+const interactionPlugin = require("@fullcalendar/interaction");
+const INITIAL_EVENTS = require("./event-utils").INITIAL_EVENTS;
+const createEventId = require("./event-utils").createEventId;
+
+// export default class DemoApp extends React.Component {
+class DemoApp extends React.Component {
 
   state = {
     weekendsVisible: true,
@@ -132,3 +142,5 @@ function renderSidebarEvent(event) {
     </li>
   )
 }
+
+module.exports.DemoApp = DemoApp;

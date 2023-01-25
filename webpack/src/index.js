@@ -1,9 +1,16 @@
-import { Calendar } from '@fullcalendar/core';
-import interactionPlugin from '@fullcalendar/interaction';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import listPlugin from '@fullcalendar/list';
-import './index.css';
+// import { Calendar } from '@fullcalendar/core';
+// import interactionPlugin from '@fullcalendar/interaction';
+// import dayGridPlugin from '@fullcalendar/daygrid';
+// import timeGridPlugin from '@fullcalendar/timegrid';
+// import listPlugin from '@fullcalendar/list';
+// import './index.css';
+
+const Calendar = require("@fullcalendar/core").Calendar;
+const interactionPlugin = require("@fullcalendar/interaction");
+const dayGridPlugin = require("@fullcalendar/daygrid");
+const timeGridPlugin = require("@fullcalendar/timegrid");
+const listPlugin = require("@fullcalendar/list");
+require('./index.css');
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');

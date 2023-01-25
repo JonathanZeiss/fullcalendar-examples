@@ -1,7 +1,12 @@
-import React from 'react'
-import { render } from 'react-dom'
-import DemoApp from './DemoApp'
-import './index.css'
+// import React from 'react'
+// import { render } from 'react-dom'
+// import DemoApp from './DemoApp'
+// import './index.css'
+
+const React = require('react');
+const render = require('react-dom').render;
+const DemoApp = require('./DemoApp');
+require('./index.css');
 
 document.addEventListener('DOMContentLoaded', function() {
   render(

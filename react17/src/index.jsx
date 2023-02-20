@@ -4,13 +4,10 @@
 // import './index.css'
 
 const React = require('react');
-const render = require('react-dom').render;
+const { render } = require('react-dom');
 const DemoApp = require('./DemoApp');
 require('./index.css');
 
-document.addEventListener('DOMContentLoaded', function() {
-  render(
-    <DemoApp />,
-    document.body.appendChild(document.createElement('div'))
-  )
-})
+document.addEventListener('DOMContentLoaded', function () {
+  render(<DemoApp />, document.body.appendChild(document.createElement('div')));
+});
